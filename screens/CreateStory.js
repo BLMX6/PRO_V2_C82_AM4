@@ -5,7 +5,7 @@ export default class CreateStory extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Create Story</Text>
+        <Text>Crear historia</Text>
       </View>
     );
   }
