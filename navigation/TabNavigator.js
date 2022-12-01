@@ -16,9 +16,9 @@ const BottomTabNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          if (route.name === "Feed") {
+          if (route.name === "Índice") {
             iconName = focused ? "home" : "home-outline";
-          } else if (route.name === "Create Story") {
+          } else if (route.name === "Crear historia") {
             iconName = focused ? "add-circle" : "add-circle-outline";
           }
           return (
@@ -34,8 +34,8 @@ const BottomTabNavigator = () => {
       activeColor={"#ee8249"}
       inactiveColor={"gray"}
     >
-      <Tab.Screen name="Feed" component={Feed} options={{headerShown:false}}/>
-      <Tab.Screen name="Create Story" component={CreateStory} options={{headerShown:false}}/>
+      <Tab.Screen name="Índice" component={Feed} options={{headerShown:false}}/>
+      <Tab.Screen name="Crear historia" component={CreateStory} options={{headerShown:false}}/>
     </Tab.Navigator>
   );
 };
